@@ -9,3 +9,9 @@ print("---PIERWSZE 5 WIERSZY---");
 print(df.head());
 
 # 2. Przygotowanie danych
+# Podział tabeli na dwie: 
+# x - przechowanie danych o domu (wiek domu, mediana lokalnego przychodu, liczba pokoi, liczba sypialni)
+# y - mediana przewidzianej ceny domu
+
+X = df[["HouseAge", "Rooms", "MedIncome", "Bedrooms"]];
+Y = df["MedHouseValue"];
